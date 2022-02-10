@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <h1>SURVEY FORM</h1>
+    </header>
+
+    <div class="container">
+      <form class="personal" action="index.html" method="post">
+        <label for="name">Name: </label>
+          <input type="text" name="name" value="" required placeholder="Enter your name"><br>
+
+        <label for="email">Email: </label>
+          <input type="email" name="email" value="" required placeholder="xxx@.com"><br>
+
+        <label for="age">Age: </label>
+          <input type="number" id="age" name="age" min="1" max="100" ><br>
+      </form>
+
+      <!-- The section with some silly questions -->
+      <form class="days" action="index.html" method="post">
+        <label for="">Your favorit time of the day</label><br>
+        <input type="radio" id="morning" name="day" value="">
+        <label for="morning">Morning</label>
+        <input type="radio" id="afternoon" name="day" value="">
+        <label for="afternoon">Afternoon</label>
+        <input type="radio" id="evening" name="day" value="">
+        <label for="evening">Evening</label>
+      </form>
+
+      <form class="languages" action="index.html" method="post">
+        <label for="languages">Your favorite language</label><br>
+        <input type="checkbox" id="lang_1" name="lang_1" value="">
+        <label for="lang_1">JavaScript</label><br>
+        <input type="checkbox" id="lang_2" name="lang_2" value="">
+        <label for="lang_2">Python</label><br>
+        <input type="checkbox" id="lang_3" name="lang_3" value="">
+        <label for="lang_3">C#</label><br>
+        <input type="checkbox" id="other" name="other" value="">
+        <label for="other">Other</label>
+      </form>
+
+      <form class="message" action="index.html" method="post">
+        <textarea name="message" rows="5" cols="50" placeholder="Your message..."></textarea>
+
+      </form>
+
+      <form class="submission" action="index.html" method="post">
+        <input type="submit" id="submit" name="submit" value="submit">
+        <input type="reset" id="reset" name="reset" value="reset">
+      </form>
+
+    </div>
+
+  </body>
+</html>
