@@ -64,6 +64,7 @@ textarea {
   border-radius: 10px;
   border-bottom: 5px solid rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  transition: 1s all;
 }
 
 .container {
